@@ -1,12 +1,18 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+      'hero-pattern': "url('/src/assets/images/bg.png')",
+      'appointment': "url('/src/assets/images/appointment.png')",
+      'footer-texture': "url('/src/assets/images/footer.png')",
+    }
+  },
   },
   daisyui: {
     themes: [
       {
-        mytheme: {
+        doctortheme: {
           primary: "#0FCFEC",
           secondary: "#19D3AE",
           accent: "#3A4256",
@@ -14,7 +20,6 @@ module.exports = {
           "base-100": "#ffffff",
         },
       },
-      "dark",
       "cupcake",
     ],
   },
